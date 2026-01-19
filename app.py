@@ -1,10 +1,9 @@
-# --- 1. SQLITE FIX (Sab se upar honi chahiye) ---
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
-# --- Imports ---
 import streamlit as st
+# ... baqi saare imports iske baad
 import os
 import gc
 from langchain_groq import ChatGroq
